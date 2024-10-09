@@ -1,0 +1,8 @@
+﻿################################################################################
+# Este archivo .gitignore ha sido creado automáticamente por Microsoft(R) Visual Studio.
+################################################################################
+
+/Inventory.Infrastructure/obj/Debug/net8.0
+/InventoryApi.Application/bin/Debug/net8.0
+/InventoryApi.Application/obj/Debug/net8.0
+/InventoryApi.Domain/bin/Debug/net8.0
