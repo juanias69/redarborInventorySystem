@@ -21,10 +21,10 @@ namespace Inventory.Application.Handlers
             {
                 var product = new Product
                 {
-                    Name = request.Name,
-                    Description = request.Description,
-                    CategoryId = request.CategoryId,
-                    Price = request.Price
+                    Name = request.Product.Name,
+                    Description = request.Product.Description,
+                    CategoryId = request.Product.CategoryId,
+                    Price = request.Product.Price
                 };
                 await _productRepository.AddAsync(product);
 
