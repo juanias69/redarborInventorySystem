@@ -1,8 +1,29 @@
-﻿################################################################################
-# Este archivo .gitignore ha sido creado automáticamente por Microsoft(R) Visual Studio.
-################################################################################
+﻿# Ignorar carpetas y archivos de compilación
+/bin/
+/obj/
+/out/
 
-/Inventory.Infrastructure/obj/Debug/net8.0
-/InventoryApi.Application/bin/Debug/net8.0
-/InventoryApi.Application/obj/Debug/net8.0
-/InventoryApi.Domain/bin/Debug/net8.0
+# Ignorar archivos de configuración de usuario de Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Ignorar archivos de registro
+*.log
+
+# Ignorar carpetas de dependencias de NuGet
+packages/
+*.nupkg
+
+# Ignorar archivos temporales
+*.tmp
+*.temp
+
+# Ignorar carpetas de Docker
+.docker/
+docker-compose.override.yml
+
+# Ignorar archivos de configuración de JetBrains Rider
+.idea/
