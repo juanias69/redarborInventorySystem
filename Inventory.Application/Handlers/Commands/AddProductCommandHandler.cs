@@ -8,9 +8,9 @@ namespace Inventory.Application.Handlers
 {
     public class AddProductCommandHandler : IRequestHandler<AddProductCommand, ResponseResult>
     {
-        private readonly IProductRepository _productRepository;
+        private readonly IProductCommandRepository _productRepository;
 
-        public AddProductCommandHandler(IProductRepository productRepository)
+        public AddProductCommandHandler(IProductCommandRepository productRepository)
         {
             _productRepository = productRepository;
         }

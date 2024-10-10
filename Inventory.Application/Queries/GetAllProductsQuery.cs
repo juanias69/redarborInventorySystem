@@ -3,7 +3,5 @@ using MediatR;
 
 namespace Inventory.Application.Queries
 {
-    public class GetAllProductsQuery : IRequest<IEnumerable<Product>>
-    {
-    }
+    public record GetAllProductsQuery : IRequest<IEnumerable<Product>>;
 }

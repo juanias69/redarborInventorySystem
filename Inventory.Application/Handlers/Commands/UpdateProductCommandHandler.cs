@@ -7,9 +7,9 @@ namespace Inventory.Application.Handlers
 {
     public class UpdateProductCommandHandler : IRequestHandler<UpdateProductCommand, ResponseResult>
     {
-        private readonly IProductRepository _productRepository;
+        private readonly IProductCommandRepository _productRepository;
 
-        public UpdateProductCommandHandler(IProductRepository productRepository)
+        public UpdateProductCommandHandler(IProductCommandRepository productRepository)
         {
             _productRepository = productRepository;
         }
@@ -18,16 +18,13 @@ namespace Inventory.Application.Handlers
         {
             try
             {
-                var existingProduct = await _productRepository.GetByIdAsync(request.Id);
-                if (existingProduct == null)
-                    return new ResponseResult() { Success = false, Message = $"El producto con Id {request.Id} no existe." };
                 var product = new Product
                 {
-                    Id = request.Id,
-                    Name = request.Name,
-                    Description = request.Description,
-                    CategoryId = request.CategoryId,
-                    Price = request.Price
+                    Id = (int)request.Product.Id!,
+                    Name = request.Product.Name,
+                    Description = request.Product.Description,
+                    CategoryId = request.Product.CategoryId,
+                    Price = request.Product.Price
                 };
                 await _productRepository.UpdateAsync(product);
 

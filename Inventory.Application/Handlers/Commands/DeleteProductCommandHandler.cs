@@ -7,9 +7,9 @@ namespace Inventory.Application.Handlers
 {
     public class DeleteProductCommandHandler : IRequestHandler<DeleteProductCommand, ResponseResult>
     {
-        private readonly IProductRepository _productRepository;
+        private readonly IProductCommandRepository _productRepository;
 
-        public DeleteProductCommandHandler(IProductRepository productRepository)
+        public DeleteProductCommandHandler(IProductCommandRepository productRepository)
         {
             _productRepository = productRepository;
         }
@@ -18,9 +18,6 @@ namespace Inventory.Application.Handlers
         {
             try
             {
-                var existingProduct = await _productRepository.GetByIdAsync(request.Id);
-                if (existingProduct == null)
-                    return new ResponseResult() { Success = false, Message = $"El producto con Id {request.Id} no existe." };
                 await _productRepository.DeleteAsync(request.Id);
 
                 return new ResponseResult() { Success = true, Message = "Registro eliminado correctamente" };
