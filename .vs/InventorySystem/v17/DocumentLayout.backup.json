@@ -3,36 +3,20 @@
   "WorkspaceRootPath": "D:\\Json\\Redarbor Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AB62BD5D-0CA6-4EDD-AD03-0FB018B2A6CD}|Inventory.Tests\\Inventory.Tests.csproj|d:\\json\\redarbor project\\inventory.tests\\commands\\addproductcommandhandlertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB62BD5D-0CA6-4EDD-AD03-0FB018B2A6CD}|Inventory.Tests\\Inventory.Tests.csproj|solutionrelative:inventory.tests\\commands\\addproductcommandhandlertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5DFD475D-E86F-4E1F-BC4E-F9CB4503061F}|Inventory.Application\\Inventory.Application.csproj|d:\\json\\redarbor project\\inventory.application\\services\\productappservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DFD475D-E86F-4E1F-BC4E-F9CB4503061F}|Inventory.Application\\Inventory.Application.csproj|solutionrelative:inventory.application\\services\\productappservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AB62BD5D-0CA6-4EDD-AD03-0FB018B2A6CD}|Inventory.Tests\\Inventory.Tests.csproj|d:\\json\\redarbor project\\inventory.tests\\queries\\getallproductsqueryhandlertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB62BD5D-0CA6-4EDD-AD03-0FB018B2A6CD}|Inventory.Tests\\Inventory.Tests.csproj|solutionrelative:inventory.tests\\queries\\getallproductsqueryhandlertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FFFB63D1-2BBD-42BA-B822-FB36C477F173}|Inventory.Api\\Inventory.Api.csproj|d:\\json\\redarbor project\\inventory.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FFFB63D1-2BBD-42BA-B822-FB36C477F173}|Inventory.Api\\Inventory.Api.csproj|solutionrelative:inventory.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AB62BD5D-0CA6-4EDD-AD03-0FB018B2A6CD}|Inventory.Tests\\Inventory.Tests.csproj|d:\\json\\redarbor project\\inventory.tests\\queries\\getproductbyidqueryhandlertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB62BD5D-0CA6-4EDD-AD03-0FB018B2A6CD}|Inventory.Tests\\Inventory.Tests.csproj|solutionrelative:inventory.tests\\queries\\getproductbyidqueryhandlertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5DFD475D-E86F-4E1F-BC4E-F9CB4503061F}|Inventory.Application\\Inventory.Application.csproj|d:\\json\\redarbor project\\inventory.application\\interfaces\\iproductappservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DFD475D-E86F-4E1F-BC4E-F9CB4503061F}|Inventory.Application\\Inventory.Application.csproj|solutionrelative:inventory.application\\interfaces\\iproductappservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AB62BD5D-0CA6-4EDD-AD03-0FB018B2A6CD}|Inventory.Tests\\Inventory.Tests.csproj|d:\\json\\redarbor project\\inventory.tests\\commands\\deleteproductcommandhandlertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB62BD5D-0CA6-4EDD-AD03-0FB018B2A6CD}|Inventory.Tests\\Inventory.Tests.csproj|solutionrelative:inventory.tests\\commands\\deleteproductcommandhandlertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB62BD5D-0CA6-4EDD-AD03-0FB018B2A6CD}|Inventory.Tests\\Inventory.Tests.csproj|d:\\json\\redarbor project\\inventory.tests\\commands\\updateproductcommandhandlertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB62BD5D-0CA6-4EDD-AD03-0FB018B2A6CD}|Inventory.Tests\\Inventory.Tests.csproj|solutionrelative:inventory.tests\\commands\\updateproductcommandhandlertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB62BD5D-0CA6-4EDD-AD03-0FB018B2A6CD}|Inventory.Tests\\Inventory.Tests.csproj|d:\\json\\redarbor project\\inventory.tests\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB62BD5D-0CA6-4EDD-AD03-0FB018B2A6CD}|Inventory.Tests\\Inventory.Tests.csproj|solutionrelative:inventory.tests\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5DFD475D-E86F-4E1F-BC4E-F9CB4503061F}|Inventory.Application\\Inventory.Application.csproj|d:\\json\\redarbor project\\inventory.application\\inventory.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{5DFD475D-E86F-4E1F-BC4E-F9CB4503061F}|Inventory.Application\\Inventory.Application.csproj|solutionrelative:inventory.application\\inventory.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5DFD475D-E86F-4E1F-BC4E-F9CB4503061F}|Inventory.Application\\Inventory.Application.csproj|d:\\json\\redarbor project\\inventory.application\\commands\\updateproductcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5DFD475D-E86F-4E1F-BC4E-F9CB4503061F}|Inventory.Application\\Inventory.Application.csproj|solutionrelative:inventory.application\\commands\\updateproductcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5DFD475D-E86F-4E1F-BC4E-F9CB4503061F}|Inventory.Application\\Inventory.Application.csproj|d:\\json\\redarbor project\\inventory.application\\commands\\commandhandler\\updateproductcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DFD475D-E86F-4E1F-BC4E-F9CB4503061F}|Inventory.Application\\Inventory.Application.csproj|solutionrelative:inventory.application\\commands\\commandhandler\\updateproductcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -55,105 +39,53 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "GetAllProductsQueryHandlerTests.cs",
-              "DocumentMoniker": "D:\\Json\\Redarbor Project\\Inventory.Tests\\Queries\\GetAllProductsQueryHandlerTests.cs",
-              "RelativeDocumentMoniker": "Inventory.Tests\\Queries\\GetAllProductsQueryHandlerTests.cs",
-              "ToolTip": "D:\\Json\\Redarbor Project\\Inventory.Tests\\Queries\\GetAllProductsQueryHandlerTests.cs",
-              "RelativeToolTip": "Inventory.Tests\\Queries\\GetAllProductsQueryHandlerTests.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Json\\Redarbor Project\\Inventory.Api\\Program.cs",
+              "RelativeDocumentMoniker": "Inventory.Api\\Program.cs",
+              "ToolTip": "D:\\Json\\Redarbor Project\\Inventory.Api\\Program.cs",
+              "RelativeToolTip": "Inventory.Api\\Program.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAACsAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-10T18:09:40.594Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "GetProductByIdQueryHandlerTests.cs",
-              "DocumentMoniker": "D:\\Json\\Redarbor Project\\Inventory.Tests\\Queries\\GetProductByIdQueryHandlerTests.cs",
-              "RelativeDocumentMoniker": "Inventory.Tests\\Queries\\GetProductByIdQueryHandlerTests.cs",
-              "ToolTip": "D:\\Json\\Redarbor Project\\Inventory.Tests\\Queries\\GetProductByIdQueryHandlerTests.cs",
-              "RelativeToolTip": "Inventory.Tests\\Queries\\GetProductByIdQueryHandlerTests.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-10T18:09:30.574Z",
+              "WhenOpened": "2024-10-10T18:48:49.683Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "DeleteProductCommandHandlerTests.cs",
-              "DocumentMoniker": "D:\\Json\\Redarbor Project\\Inventory.Tests\\Commands\\DeleteProductCommandHandlerTests.cs",
-              "RelativeDocumentMoniker": "Inventory.Tests\\Commands\\DeleteProductCommandHandlerTests.cs",
-              "ToolTip": "D:\\Json\\Redarbor Project\\Inventory.Tests\\Commands\\DeleteProductCommandHandlerTests.cs",
-              "RelativeToolTip": "Inventory.Tests\\Commands\\DeleteProductCommandHandlerTests.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "UpdateProductCommandHandler.cs",
+              "DocumentMoniker": "D:\\Json\\Redarbor Project\\Inventory.Application\\Commands\\CommandHandler\\UpdateProductCommandHandler.cs",
+              "RelativeDocumentMoniker": "Inventory.Application\\Commands\\CommandHandler\\UpdateProductCommandHandler.cs",
+              "ToolTip": "D:\\Json\\Redarbor Project\\Inventory.Application\\Commands\\CommandHandler\\UpdateProductCommandHandler.cs",
+              "RelativeToolTip": "Inventory.Application\\Commands\\CommandHandler\\UpdateProductCommandHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-10T18:09:16.119Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "UpdateProductCommandHandlerTests.cs",
-              "DocumentMoniker": "D:\\Json\\Redarbor Project\\Inventory.Tests\\Commands\\UpdateProductCommandHandlerTests.cs",
-              "RelativeDocumentMoniker": "Inventory.Tests\\Commands\\UpdateProductCommandHandlerTests.cs",
-              "ToolTip": "D:\\Json\\Redarbor Project\\Inventory.Tests\\Commands\\UpdateProductCommandHandlerTests.cs",
-              "RelativeToolTip": "Inventory.Tests\\Commands\\UpdateProductCommandHandlerTests.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-10T18:09:08.099Z",
+              "WhenOpened": "2024-10-10T18:46:18.179Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "AddProductCommandHandlerTests.cs",
-              "DocumentMoniker": "D:\\Json\\Redarbor Project\\Inventory.Tests\\Commands\\AddProductCommandHandlerTests.cs",
-              "RelativeDocumentMoniker": "Inventory.Tests\\Commands\\AddProductCommandHandlerTests.cs",
-              "ToolTip": "D:\\Json\\Redarbor Project\\Inventory.Tests\\Commands\\AddProductCommandHandlerTests.cs",
-              "RelativeToolTip": "Inventory.Tests\\Commands\\AddProductCommandHandlerTests.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC8AAAAAAAAAAAAAAA==",
+              "Title": "ProductAppService.cs",
+              "DocumentMoniker": "D:\\Json\\Redarbor Project\\Inventory.Application\\Services\\ProductAppService.cs",
+              "RelativeDocumentMoniker": "Inventory.Application\\Services\\ProductAppService.cs",
+              "ToolTip": "D:\\Json\\Redarbor Project\\Inventory.Application\\Services\\ProductAppService.cs",
+              "RelativeToolTip": "Inventory.Application\\Services\\ProductAppService.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAhwDgAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-10T18:08:57.252Z",
+              "WhenOpened": "2024-10-10T18:45:34.544Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "UnitTest1.cs",
-              "DocumentMoniker": "D:\\Json\\Redarbor Project\\Inventory.Tests\\UnitTest1.cs",
-              "RelativeDocumentMoniker": "Inventory.Tests\\UnitTest1.cs",
-              "ToolTip": "D:\\Json\\Redarbor Project\\Inventory.Tests\\UnitTest1.cs",
-              "RelativeToolTip": "Inventory.Tests\\UnitTest1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "IProductAppService.cs",
+              "DocumentMoniker": "D:\\Json\\Redarbor Project\\Inventory.Application\\Interfaces\\IProductAppService.cs",
+              "RelativeDocumentMoniker": "Inventory.Application\\Interfaces\\IProductAppService.cs",
+              "ToolTip": "D:\\Json\\Redarbor Project\\Inventory.Application\\Interfaces\\IProductAppService.cs",
+              "RelativeToolTip": "Inventory.Application\\Interfaces\\IProductAppService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-10T18:02:56.661Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Inventory.Application",
-              "DocumentMoniker": "D:\\Json\\Redarbor Project\\Inventory.Application\\Inventory.Application.csproj",
-              "RelativeDocumentMoniker": "Inventory.Application\\Inventory.Application.csproj",
-              "ToolTip": "D:\\Json\\Redarbor Project\\Inventory.Application\\Inventory.Application.csproj",
-              "RelativeToolTip": "Inventory.Application\\Inventory.Application.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-10-10T17:59:11.892Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "UpdateProductCommand.cs",
-              "DocumentMoniker": "D:\\Json\\Redarbor Project\\Inventory.Application\\Commands\\UpdateProductCommand.cs",
-              "RelativeDocumentMoniker": "Inventory.Application\\Commands\\UpdateProductCommand.cs",
-              "ToolTip": "D:\\Json\\Redarbor Project\\Inventory.Application\\Commands\\UpdateProductCommand.cs",
-              "RelativeToolTip": "Inventory.Application\\Commands\\UpdateProductCommand.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-10T17:38:51.661Z",
+              "WhenOpened": "2024-10-10T18:44:58.562Z",
               "EditorCaption": ""
             }
           ]

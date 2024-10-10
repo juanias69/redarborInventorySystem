@@ -3,7 +3,7 @@ using Inventory.Domain.Entities;
 using Inventory.Domain.Interfaces;
 using MediatR;
 
-namespace Inventory.Application.Handlers
+namespace Inventory.Application.Queries.QueryHandler
 {
     public class GetAllProductsQueryHandler : IRequestHandler<GetAllProductsQuery, IEnumerable<Product>>
     {

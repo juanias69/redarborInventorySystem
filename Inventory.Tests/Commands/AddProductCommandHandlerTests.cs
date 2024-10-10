@@ -1,7 +1,7 @@
 ﻿using FluentAssertions;
 using Inventory.Application.Commands;
+using Inventory.Application.Commands.CommandHandler;
 using Inventory.Application.DTOs;
-using Inventory.Application.Handlers;
 using Inventory.Domain.Entities;
 using Inventory.Domain.Interfaces;
 using Moq;

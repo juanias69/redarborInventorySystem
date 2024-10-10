@@ -4,7 +4,7 @@ using Inventory.Domain.Interfaces;
 using MediatR;
 
 
-namespace Inventory.Application.Handlers
+namespace Inventory.Application.Commands.CommandHandler
 {
     public class AddProductCommandHandler : IRequestHandler<AddProductCommand, ResponseResult>
     {
