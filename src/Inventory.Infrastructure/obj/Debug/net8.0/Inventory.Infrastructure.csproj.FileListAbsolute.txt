@@ -1,0 +1,16 @@
+/Users/jasonjuanias/Documents/GitHub/redarborInventorySystem/Inventory.Infrastructure/bin/Debug/net8.0/Inventory.Infrastructure.deps.json
+/Users/jasonjuanias/Documents/GitHub/redarborInventorySystem/Inventory.Infrastructure/bin/Debug/net8.0/Inventory.Infrastructure.dll
+/Users/jasonjuanias/Documents/GitHub/redarborInventorySystem/Inventory.Infrastructure/bin/Debug/net8.0/Inventory.Infrastructure.pdb
+/Users/jasonjuanias/Documents/GitHub/redarborInventorySystem/Inventory.Infrastructure/bin/Debug/net8.0/Inventory.Domain.dll
+/Users/jasonjuanias/Documents/GitHub/redarborInventorySystem/Inventory.Infrastructure/bin/Debug/net8.0/Inventory.Domain.pdb
+/Users/jasonjuanias/Documents/GitHub/redarborInventorySystem/Inventory.Infrastructure/obj/Debug/net8.0/Inventory.Infrastructure.csproj.AssemblyReference.cache
+/Users/jasonjuanias/Documents/GitHub/redarborInventorySystem/Inventory.Infrastructure/obj/Debug/net8.0/Inventory.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+/Users/jasonjuanias/Documents/GitHub/redarborInventorySystem/Inventory.Infrastructure/obj/Debug/net8.0/Inventory.Infrastructure.AssemblyInfoInputs.cache
+/Users/jasonjuanias/Documents/GitHub/redarborInventorySystem/Inventory.Infrastructure/obj/Debug/net8.0/Inventory.Infrastructure.AssemblyInfo.cs
+/Users/jasonjuanias/Documents/GitHub/redarborInventorySystem/Inventory.Infrastructure/obj/Debug/net8.0/Inventory.Infrastructure.csproj.CoreCompileInputs.cache
+/Users/jasonjuanias/Documents/GitHub/redarborInventorySystem/Inventory.Infrastructure/obj/Debug/net8.0/Inventory.Infrastructure.sourcelink.json
+/Users/jasonjuanias/Documents/GitHub/redarborInventorySystem/Inventory.Infrastructure/obj/Debug/net8.0/Inventor.89798F14.Up2Date
+/Users/jasonjuanias/Documents/GitHub/redarborInventorySystem/Inventory.Infrastructure/obj/Debug/net8.0/Inventory.Infrastructure.dll
+/Users/jasonjuanias/Documents/GitHub/redarborInventorySystem/Inventory.Infrastructure/obj/Debug/net8.0/refint/Inventory.Infrastructure.dll
+/Users/jasonjuanias/Documents/GitHub/redarborInventorySystem/Inventory.Infrastructure/obj/Debug/net8.0/Inventory.Infrastructure.pdb
+/Users/jasonjuanias/Documents/GitHub/redarborInventorySystem/Inventory.Infrastructure/obj/Debug/net8.0/ref/Inventory.Infrastructure.dll

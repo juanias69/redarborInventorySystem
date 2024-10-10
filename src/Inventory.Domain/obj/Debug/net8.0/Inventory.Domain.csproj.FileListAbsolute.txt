@@ -1,0 +1,12 @@
+/Users/jasonjuanias/Documents/GitHub/redarborInventorySystem/Inventory.Domain/bin/Debug/net8.0/Inventory.Domain.deps.json
+/Users/jasonjuanias/Documents/GitHub/redarborInventorySystem/Inventory.Domain/bin/Debug/net8.0/Inventory.Domain.dll
+/Users/jasonjuanias/Documents/GitHub/redarborInventorySystem/Inventory.Domain/bin/Debug/net8.0/Inventory.Domain.pdb
+/Users/jasonjuanias/Documents/GitHub/redarborInventorySystem/Inventory.Domain/obj/Debug/net8.0/Inventory.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/Users/jasonjuanias/Documents/GitHub/redarborInventorySystem/Inventory.Domain/obj/Debug/net8.0/Inventory.Domain.AssemblyInfoInputs.cache
+/Users/jasonjuanias/Documents/GitHub/redarborInventorySystem/Inventory.Domain/obj/Debug/net8.0/Inventory.Domain.AssemblyInfo.cs
+/Users/jasonjuanias/Documents/GitHub/redarborInventorySystem/Inventory.Domain/obj/Debug/net8.0/Inventory.Domain.csproj.CoreCompileInputs.cache
+/Users/jasonjuanias/Documents/GitHub/redarborInventorySystem/Inventory.Domain/obj/Debug/net8.0/Inventory.Domain.sourcelink.json
+/Users/jasonjuanias/Documents/GitHub/redarborInventorySystem/Inventory.Domain/obj/Debug/net8.0/Inventory.Domain.dll
+/Users/jasonjuanias/Documents/GitHub/redarborInventorySystem/Inventory.Domain/obj/Debug/net8.0/refint/Inventory.Domain.dll
+/Users/jasonjuanias/Documents/GitHub/redarborInventorySystem/Inventory.Domain/obj/Debug/net8.0/Inventory.Domain.pdb
+/Users/jasonjuanias/Documents/GitHub/redarborInventorySystem/Inventory.Domain/obj/Debug/net8.0/ref/Inventory.Domain.dll
