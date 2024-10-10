@@ -27,3 +27,7 @@ docker-compose.override.yml
 
 # Ignorar archivos de configuración de JetBrains Rider
 .idea/
+/Inventory.Api/obj
+/Inventory.Application/obj
+/Inventory.Domain/obj
+/Inventory.Infrastructure/obj
