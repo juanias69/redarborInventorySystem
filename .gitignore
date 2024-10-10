@@ -31,3 +31,4 @@ docker-compose.override.yml
 /Inventory.Application/obj
 /Inventory.Domain/obj
 /Inventory.Infrastructure/obj
+/Inventory.Api/bin/Debug/net8.0
