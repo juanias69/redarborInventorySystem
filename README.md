@@ -9,7 +9,7 @@ Este proyecto es una API RESTful para gestionar un sistema de inventario de prod
 4. [Instrucciones de Configuración](#instrucciones-de-configuración)
     - [1. Clonar el Repositorio](#1-clonar-este-repositorio)
     - [2. Navegar a la Carpeta](#2-navegar-a-la-carpeta-donde-se-encuentra-el-archivo-docker-composeyml)
-    - [3. Crear los Contenedores](#3-crear-los-contenedores-ejecutando-el-siguiente-comando)
+    - [3. Crear objetos de base de datos](#3-crear-objeto-de-base-de-datos)
     - [4. Verificar que los Contenedores Estén Corriendo](#4-verificar-que-los-contenedores-estén-corriendo)
     - [5. Acceder a la API](#5-acceder-a-la-api)
     - [6. Ejecutar las Pruebas Unitarias](#6-ejecutar-las-pruebas-unitarias)
@@ -40,7 +40,7 @@ Este proyecto es una API RESTful para gestionar un sistema de inventario de prod
 
 ## Requisitos
 - [Docker](https://www.docker.com/get-started) (para la containerización)
-- [.NET 6 SDK](https://dotnet.microsoft.com/download/dotnet/6.0) (para desarrollo y pruebas locales)
+- [.NET 8 SDK](https://dotnet.microsoft.com/es-es/download/dotnet/8.0) (para desarrollo y pruebas locales)
 
 ---
 
@@ -48,42 +48,61 @@ Este proyecto es una API RESTful para gestionar un sistema de inventario de prod
 
 ### 1. Clonar este repositorio
 
-    ```bash
     git clone https://github.com/tu-usuario/redarborInventorySystem.git
-    ```
-    
+
 ### 2. Navegar a la carpeta donde se encuentra el archivo `docker-compose.yml` para la base de datos:
 
-    ```bash
     cd redarborInventorySystem
-    ```
 
-### 3. Crear los contenedores ejecutando el siguiente comando:
+### 3. Crear objeto de base de datos:
 
-    ```bash
-    docker-compose up --build
-    ```
+Ejecutar este script en la base de datos
+
+```bash
+
+CREATE DATABASE InventoryDb;
+GO
+
+USE InventoryDb;
+
+CREATE TABLE Categories (
+        Id INT PRIMARY KEY IDENTITY(1,1),
+        Name NVARCHAR(100) NOT NULL
+    );
+
+CREATE TABLE Products (
+        Id INT PRIMARY KEY IDENTITY(1,1),
+        Name NVARCHAR(100) NOT NULL,
+        Description NVARCHAR(100) NOT NULL,
+        CategoryId INT NOT NULL,
+        Price DECIMAL(18,2) NOT NULL
+    );
+
+CREATE TABLE Inventory (
+        Id INT PRIMARY KEY IDENTITY(1,1),
+        ProductId INT NOT NULL,
+        Quantity INT NOT NULL CHECK (Quantity >= 0), 
+        EntryDate SMALLDATETIME NOT NULL DEFAULT GETDATE()
+    );
+```
 
 ### 3. Verificar que los contenedores estén corriendo:
 
-    ```bash
     docker ps
-    ```
-
+ 
 ### 5. Acceder a la API
 
 Una vez que los contenedores estén en funcionamiento, puedes acceder a la API en:
-```bash
+
 http://localhost:9080/swagger/index.html
 https://localhost:9081/swagger/index.html
-```
 
 ### 6. Ejecutar las Pruebas Unitarias
 
 Para ejecutar las pruebas unitarias localmente:
-```bash
+
 dotnet test
-```
+
 
 ## Endpoints de la API
 
@@ -116,35 +135,6 @@ Las siguientes tablas se utilizan en el sistema:
 - **Productos**: Gestiona los productos en el inventario.
 - **Categorías**: Clasifica los productos en categorías.
 - **Movimientos de Inventario**: Rastrea los movimientos de productos (entradas/salidas).
-
-Script Base de Datos
-
-```bash
-CREATE DATABASE InventoryDb;
-GO
-
-USE InventoryDb;
-
-CREATE TABLE Categories (
-        Id INT PRIMARY KEY IDENTITY(1,1),
-        Name NVARCHAR(100) NOT NULL
-    );
-
-CREATE TABLE Products (
-        Id INT PRIMARY KEY IDENTITY(1,1),
-        Name NVARCHAR(100) NOT NULL,
-        Description NVARCHAR(100) NOT NULL,
-        CategoryId INT NOT NULL,
-        Price DECIMAL(18,2) NOT NULL
-    );
-
-CREATE TABLE Inventory (
-        Id INT PRIMARY KEY IDENTITY(1,1),
-        ProductId INT NOT NULL,
-        Quantity INT NOT NULL CHECK (Quantity >= 0), 
-        EntryDate SMALLDATETIME NOT NULL DEFAULT GETDATE()
-    );
-```
 
 ---
 
