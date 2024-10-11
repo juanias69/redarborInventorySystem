@@ -1,5 +1,4 @@
-﻿using Inventory.Application.Commands;
-using Inventory.Application.DTOs;
+﻿using Inventory.Application.DTOs;
 using Inventory.Domain.Entities;
 
 namespace Inventory.Application.IServices

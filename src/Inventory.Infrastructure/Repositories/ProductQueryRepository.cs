@@ -16,12 +16,12 @@ namespace Inventory.Infrastructure.Repositories
             _dbContext = dbContext;
         }
 
-        public async Task<Product> GetByIdAsync(int id)
+        public async Task<ProductModel> GetByIdAsync(int id)
         {
             return await _dbContext.Products.FirstOrDefaultAsync(p => p.Id == id);
         }
 
-        public async Task<IEnumerable<Product>> GetAllAsync()
+        public async Task<IEnumerable<ProductModel>> GetAllAsync()
         {
             return await _dbContext.Products.ToListAsync();
         }
