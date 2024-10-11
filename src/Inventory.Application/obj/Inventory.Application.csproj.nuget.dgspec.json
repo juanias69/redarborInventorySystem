@@ -1,33 +1,36 @@
 {
   "format": 1,
   "restore": {
-    "/Users/jasonjuanias/Documents/GitHub/redarborInventorySystem/Inventory.Application/Inventory.Application.csproj": {}
+    "D:\\repositorio\\redarborInventorySystem\\src\\Inventory.Application\\Inventory.Application.csproj": {}
   },
   "projects": {
-    "/Users/jasonjuanias/Documents/GitHub/redarborInventorySystem/Inventory.Application/Inventory.Application.csproj": {
+    "D:\\repositorio\\redarborInventorySystem\\src\\Inventory.Application\\Inventory.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/jasonjuanias/Documents/GitHub/redarborInventorySystem/Inventory.Application/Inventory.Application.csproj",
+        "projectUniqueName": "D:\\repositorio\\redarborInventorySystem\\src\\Inventory.Application\\Inventory.Application.csproj",
         "projectName": "Inventory.Application",
-        "projectPath": "/Users/jasonjuanias/Documents/GitHub/redarborInventorySystem/Inventory.Application/Inventory.Application.csproj",
-        "packagesPath": "/Users/jasonjuanias/.nuget/packages/",
-        "outputPath": "/Users/jasonjuanias/Documents/GitHub/redarborInventorySystem/Inventory.Application/obj/",
+        "projectPath": "D:\\repositorio\\redarborInventorySystem\\src\\Inventory.Application\\Inventory.Application.csproj",
+        "packagesPath": "C:\\Users\\wall9\\.nuget\\packages\\",
+        "outputPath": "D:\\repositorio\\redarborInventorySystem\\src\\Inventory.Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/jasonjuanias/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\wall9\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/Users/jasonjuanias/Documents/GitHub/redarborInventorySystem/Inventory.Domain/Inventory.Domain.csproj": {
-                "projectPath": "/Users/jasonjuanias/Documents/GitHub/redarborInventorySystem/Inventory.Domain/Inventory.Domain.csproj"
+              "D:\\repositorio\\redarborInventorySystem\\src\\Inventory.Domain\\Inventory.Domain.csproj": {
+                "projectPath": "D:\\repositorio\\redarborInventorySystem\\src\\Inventory.Domain\\Inventory.Domain.csproj"
               }
             }
           }
@@ -72,26 +75,29 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.403/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/jasonjuanias/Documents/GitHub/redarborInventorySystem/Inventory.Domain/Inventory.Domain.csproj": {
+    "D:\\repositorio\\redarborInventorySystem\\src\\Inventory.Domain\\Inventory.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/jasonjuanias/Documents/GitHub/redarborInventorySystem/Inventory.Domain/Inventory.Domain.csproj",
+        "projectUniqueName": "D:\\repositorio\\redarborInventorySystem\\src\\Inventory.Domain\\Inventory.Domain.csproj",
         "projectName": "Inventory.Domain",
-        "projectPath": "/Users/jasonjuanias/Documents/GitHub/redarborInventorySystem/Inventory.Domain/Inventory.Domain.csproj",
-        "packagesPath": "/Users/jasonjuanias/.nuget/packages/",
-        "outputPath": "/Users/jasonjuanias/Documents/GitHub/redarborInventorySystem/Inventory.Domain/obj/",
+        "projectPath": "D:\\repositorio\\redarborInventorySystem\\src\\Inventory.Domain\\Inventory.Domain.csproj",
+        "packagesPath": "C:\\Users\\wall9\\.nuget\\packages\\",
+        "outputPath": "D:\\repositorio\\redarborInventorySystem\\src\\Inventory.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/jasonjuanias/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\wall9\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -130,7 +136,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.403/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

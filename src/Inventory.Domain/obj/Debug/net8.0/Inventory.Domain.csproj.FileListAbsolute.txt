@@ -10,3 +10,15 @@
 /Users/jasonjuanias/Documents/GitHub/redarborInventorySystem/Inventory.Domain/obj/Debug/net8.0/refint/Inventory.Domain.dll
 /Users/jasonjuanias/Documents/GitHub/redarborInventorySystem/Inventory.Domain/obj/Debug/net8.0/Inventory.Domain.pdb
 /Users/jasonjuanias/Documents/GitHub/redarborInventorySystem/Inventory.Domain/obj/Debug/net8.0/ref/Inventory.Domain.dll
+D:\repositorio\redarborInventorySystem\src\Inventory.Domain\bin\Debug\net8.0\Inventory.Domain.deps.json
+D:\repositorio\redarborInventorySystem\src\Inventory.Domain\bin\Debug\net8.0\Inventory.Domain.dll
+D:\repositorio\redarborInventorySystem\src\Inventory.Domain\bin\Debug\net8.0\Inventory.Domain.pdb
+D:\repositorio\redarborInventorySystem\src\Inventory.Domain\obj\Debug\net8.0\Inventory.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\repositorio\redarborInventorySystem\src\Inventory.Domain\obj\Debug\net8.0\Inventory.Domain.AssemblyInfoInputs.cache
+D:\repositorio\redarborInventorySystem\src\Inventory.Domain\obj\Debug\net8.0\Inventory.Domain.AssemblyInfo.cs
+D:\repositorio\redarborInventorySystem\src\Inventory.Domain\obj\Debug\net8.0\Inventory.Domain.csproj.CoreCompileInputs.cache
+D:\repositorio\redarborInventorySystem\src\Inventory.Domain\obj\Debug\net8.0\Inventory.Domain.sourcelink.json
+D:\repositorio\redarborInventorySystem\src\Inventory.Domain\obj\Debug\net8.0\Inventory.Domain.dll
+D:\repositorio\redarborInventorySystem\src\Inventory.Domain\obj\Debug\net8.0\refint\Inventory.Domain.dll
+D:\repositorio\redarborInventorySystem\src\Inventory.Domain\obj\Debug\net8.0\Inventory.Domain.pdb
+D:\repositorio\redarborInventorySystem\src\Inventory.Domain\obj\Debug\net8.0\ref\Inventory.Domain.dll
