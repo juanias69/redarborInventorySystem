@@ -25,7 +25,6 @@ public class InventoryAppServiceTests
     [Fact]
     public async Task AddInventoryAsync_ShouldReturnResponseResult_WhenCommandIsExecuted()
     {
-        // Arrange
         var inventoryDto = new InventoryDto { ProductId = 1, Quantity = 100 };
         var expectedResponse = new ResponseResult { Success = true };
 
@@ -33,10 +32,8 @@ public class InventoryAppServiceTests
             .Setup(m => m.Send(It.IsAny<AddInventoryCommand>(), default))
             .ReturnsAsync(expectedResponse);
 
-        // Act
         var result = await _inventoryAppService.AddInventoryAsync(inventoryDto);
 
-        // Assert
         result.Should().BeEquivalentTo(expectedResponse);
         _mediatorMock.Verify(m => m.Send(It.IsAny<AddInventoryCommand>(), default), Times.Once);
     }
@@ -44,7 +41,6 @@ public class InventoryAppServiceTests
     [Fact]
     public async Task UpdateInventoryAsync_ShouldReturnResponseResult_WhenCommandIsExecuted()
     {
-        // Arrange
         var inventoryDto = new InventoryDto { ProductId = 1, Quantity = 150 };
         var expectedResponse = new ResponseResult { Success = true };
 
@@ -52,10 +48,8 @@ public class InventoryAppServiceTests
             .Setup(m => m.Send(It.IsAny<UpdateInventoryCommand>(), default))
             .ReturnsAsync(expectedResponse);
 
-        // Act
         var result = await _inventoryAppService.UpdateInventoryAsync(inventoryDto);
 
-        // Assert
         result.Should().BeEquivalentTo(expectedResponse);
         _mediatorMock.Verify(m => m.Send(It.IsAny<UpdateInventoryCommand>(), default), Times.Once);
     }
@@ -63,7 +57,6 @@ public class InventoryAppServiceTests
     [Fact]
     public async Task GetInventoryByProductIdAsync_ShouldReturnInventoryDto_WhenQueryIsExecuted()
     {
-        // Arrange
         var productId = 1;
         var expectedInventoryDto = new InventoryDto { ProductId = productId, Quantity = 100 };
 
@@ -71,10 +64,8 @@ public class InventoryAppServiceTests
             .Setup(m => m.Send(It.IsAny<GetInventarytByProductIdQuery>(), default))
             .ReturnsAsync(expectedInventoryDto);
 
-        // Act
         var result = await _inventoryAppService.GetInventoryByProductIdAsync(productId);
 
-        // Assert
         result.Should().BeEquivalentTo(expectedInventoryDto);
         _mediatorMock.Verify(m => m.Send(It.IsAny<GetInventarytByProductIdQuery>(), default), Times.Once);
     }
@@ -82,7 +73,6 @@ public class InventoryAppServiceTests
     [Fact]
     public async Task GetAllInventoriesAsync_ShouldReturnInventoryDtoList_WhenQueryIsExecuted()
     {
-        // Arrange
         var expectedInventories = new List<InventoryDto>
         {
             new InventoryDto { ProductId = 1, Quantity = 100 },
@@ -93,10 +83,8 @@ public class InventoryAppServiceTests
             .Setup(m => m.Send(It.IsAny<GetAllInventoriesQuery>(), default))
             .ReturnsAsync(expectedInventories);
 
-        // Act
         var result = await _inventoryAppService.GetAllInventoriesAsync();
 
-        // Assert
         result.Should().BeEquivalentTo(expectedInventories);
         _mediatorMock.Verify(m => m.Send(It.IsAny<GetAllInventoriesQuery>(), default), Times.Once);
     }

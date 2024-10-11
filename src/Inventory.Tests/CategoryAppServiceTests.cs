@@ -25,7 +25,6 @@ public class CategoryAppServiceTests
     [Fact]
     public async Task AddCategoryAsync_ShouldReturnResponseResult_WhenCommandIsExecuted()
     {
-        // Arrange
         var categoryDto = new CategoryDto { Name = "Papeleria" };
         var expectedResponse = new ResponseResult { Success = true };
 
@@ -33,10 +32,8 @@ public class CategoryAppServiceTests
             .Setup(m => m.Send(It.IsAny<AddCategoryCommand>(), default))
             .ReturnsAsync(expectedResponse);
 
-        // Act
         var result = await _categoryAppService.AddCategoryAsync(categoryDto);
 
-        // Assert
         result.Should().BeEquivalentTo(expectedResponse);
         _mediatorMock.Verify(m => m.Send(It.IsAny<AddCategoryCommand>(), default), Times.Once);
     }
@@ -44,7 +41,6 @@ public class CategoryAppServiceTests
     [Fact]
     public async Task GetAllCategoriesAsync_ShouldReturnCategoryDtoList_WhenQueryIsExecuted()
     {
-        // Arrange
         var expectedCategories = new List<CategoryDto>
         {
             new CategoryDto { Id = 1, Name = "Papeleria" },
@@ -55,10 +51,8 @@ public class CategoryAppServiceTests
             .Setup(m => m.Send(It.IsAny<GetAllCategoriesQuery>(), default))
             .ReturnsAsync(expectedCategories);
 
-        // Act
         var result = await _categoryAppService.GetAllCategoriesAsync();
 
-        // Assert
         result.Should().BeEquivalentTo(expectedCategories);
         _mediatorMock.Verify(m => m.Send(It.IsAny<GetAllCategoriesQuery>(), default), Times.Once);
     }
@@ -66,7 +60,6 @@ public class CategoryAppServiceTests
     [Fact]
     public async Task DeleteCategoryAsync_ShouldReturnResponseResult_WhenCommandIsExecuted()
     {
-        // Arrange
         var categoryId = 1;
         var expectedResponse = new ResponseResult { Success = true };
 
@@ -74,10 +67,8 @@ public class CategoryAppServiceTests
             .Setup(m => m.Send(It.IsAny<DeleteCategoryCommand>(), default))
             .ReturnsAsync(expectedResponse);
 
-        // Act
         var result = await _categoryAppService.DeleteCategoryAsync(categoryId);
 
-        // Assert
         result.Should().BeEquivalentTo(expectedResponse);
         _mediatorMock.Verify(m => m.Send(It.IsAny<DeleteCategoryCommand>(), default), Times.Once);
     }
