@@ -50,13 +50,12 @@ Este proyecto es una API RESTful para gestionar un sistema de inventario de prod
 
     ```bash
     git clone https://github.com/tu-usuario/redarborInventorySystem.git
-    cd redarborInventorySystem
     ```
     
 ### 2. Navegar a la carpeta donde se encuentra el archivo `docker-compose.yml` para la base de datos:
 
     ```bash
-    cd docker/DataBase
+    cd redarborInventorySystem
     ```
 
 ### 3. Crear los contenedores ejecutando el siguiente comando:
