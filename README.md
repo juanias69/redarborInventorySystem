@@ -40,7 +40,7 @@ Este proyecto es una API RESTful para gestionar un sistema de inventario de prod
 
 ## Requisitos
 - [Docker](https://www.docker.com/get-started) (para la containerización)
-- [.NET 6 SDK](https://dotnet.microsoft.com/download/dotnet/6.0) (para desarrollo y pruebas locales)
+- [.NET 8 SDK](https://dotnet.microsoft.com/es-es/download/dotnet/8.0) (para desarrollo y pruebas locales)
 
 ---
 
@@ -57,6 +57,8 @@ Este proyecto es una API RESTful para gestionar un sistema de inventario de prod
 ### 3. Crear objeto de base de datos:
 
 Ejecutar este script en la base de datos
+
+```bash
 
 CREATE DATABASE InventoryDb;
 GO
@@ -82,7 +84,7 @@ CREATE TABLE Inventory (
         Quantity INT NOT NULL CHECK (Quantity >= 0), 
         EntryDate SMALLDATETIME NOT NULL DEFAULT GETDATE()
     );
-
+```
 
 ### 3. Verificar que los contenedores estén corriendo:
 
