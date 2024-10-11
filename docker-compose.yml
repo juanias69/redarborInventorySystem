@@ -1,20 +1,16 @@
-version: '3.8'
-
 services:
   api:
-    image: inventorysystem  
     build:
-      context: ../../redarborInventorySystem/src/Inventory.Api  
-      dockerfile: Dockerfile 
+      context: ./src
+      dockerfile: Inventory.Api/Dockerfile
     ports:
-      - "5000:80"  
+      - "5001:80"
     depends_on:
       - sqlserver  
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
     networks:
       - app-network
-
   sqlserver:
     image: mcr.microsoft.com/mssql/server
     environment:
