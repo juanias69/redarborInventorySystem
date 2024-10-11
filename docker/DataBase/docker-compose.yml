@@ -16,7 +16,7 @@ services:
       - app-network
 
   sqlserver:
-    image: mcr.microsoft.com/mssql/server:2019
+    image: mcr.microsoft.com/mssql/server
     environment:
       SA_PASSWORD: "redarbor.2024"
       ACCEPT_EULA: "Y"
