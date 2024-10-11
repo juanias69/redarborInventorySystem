@@ -50,13 +50,12 @@ Este proyecto es una API RESTful para gestionar un sistema de inventario de prod
 
     ```bash
     git clone https://github.com/tu-usuario/redarborInventorySystem.git
-    cd redarborInventorySystem
     ```
     
 ### 2. Navegar a la carpeta donde se encuentra el archivo `docker-compose.yml` para la base de datos:
 
     ```bash
-    cd docker/DataBase
+    cd redarborInventorySystem
     ```
 
 ### 3. Crear los contenedores ejecutando el siguiente comando:
@@ -75,7 +74,8 @@ Este proyecto es una API RESTful para gestionar un sistema de inventario de prod
 
 Una vez que los contenedores estén en funcionamiento, puedes acceder a la API en:
 ```bash
-http://localhost:32770/swagger
+http://localhost:9080/swagger/index.html
+https://localhost:9081/swagger/index.html
 ```
 
 ### 6. Ejecutar las Pruebas Unitarias
