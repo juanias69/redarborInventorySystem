@@ -1,9 +1,9 @@
 services:
   api:
-    image: inventorysystem  
+    image: inventory_system
     build:
-      context: ../../src/Inventory.Api  
-      dockerfile: Dockerfile 
+      context: ../.. 
+      dockerfile: ./docker/App/Dockerfile
     ports:
       - "5000:80"  
     depends_on:
@@ -21,7 +21,7 @@ services:
     ports:
       - "1433:1433" 
     volumes:
-      - ./Database/init.sql:/docker-entrypoint-initdb.d/init.sql  # Verifica que el archivo exista
+      - ./Database/init.sql:/docker-entrypoint-initdb.d/init.sql 
     networks:
       - app-network
 
