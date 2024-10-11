@@ -45,7 +45,7 @@ Este proyecto es una API RESTful para gestionar un sistema de inventario de prod
 
 ## Instrucciones de Configuración
 
-### 1. Clonar este repositorio y navegar a la carpeta del proyecto
+### 1. Clonar este repositorio
 
     ```bash
     git clone https://github.com/tu-usuario/redarborInventorySystem.git
