@@ -7,16 +7,15 @@ Este proyecto es una API RESTful para gestionar un sistema de inventario de prod
 2. [Tecnologías Usadas](#tecnologías-usadas)
 3. [Requisitos](#requisitos)
 4. [Instrucciones de Configuración](#instrucciones-de-configuración)
-    - [1. Clonar el Repositorio](#1-clonar-el-repositorio)
-    - [2. Configuración de Docker](#2-configuración-de-docker)
-    - [3. Construir y Ejecutar la Aplicación](#3-construir-y-ejecutar-la-aplicación)
-    - [4. Acceder a la API](#4-acceder-a-la-api)
-    - [5. Ejecutar las Pruebas Unitarias](#5-ejecutar-las-pruebas-unitarias)
-5. [Estructura del Proyecto](#estructura-del-proyecto)
-6. [Endpoints de la API](#endpoints-de-la-api)
-7. [Esquema de Base de Datos](#esquema-de-base-de-datos)
-8. [Autenticación](#autenticación)
-9. [Contribuciones](#contribuciones)
+    - [1. Clonar el Repositorio](#1-clonar-este-repositorio)
+    - [2. Navegar a la Carpeta](#2-navegar-a-la-carpeta-donde-se-encuentra-el-archivo-docker-composeyml)
+    - [3. Crear los Contenedores](#3-crear-los-contenedores-ejecutando-el-siguiente-comando)
+    - [4. Verificar que los Contenedores Estén Corriendo](#4-verificar-que-los-contenedores-estén-corriendo)
+    - [5. Acceder a la API](#5-acceder-a-la-api)
+    - [6. Ejecutar las Pruebas Unitarias](#6-ejecutar-las-pruebas-unitarias)
+5. [Endpoints de la API](#endpoints-de-la-api)
+6. [Esquema de Base de Datos](#esquema-de-base-de-datos)
+7. [Autenticación](#autenticación)
 
 ---
 
@@ -30,7 +29,7 @@ Este proyecto es una API RESTful para gestionar un sistema de inventario de prod
 - Incluye pruebas unitarias para servicios clave.
 
 ## Tecnologías Usadas
-- **Backend**: .NET 6.0, ASP.NET Core Web API
+- **Backend**: .NET 8.0, ASP.NET Core Web API
 - **ORM para Lecturas**: Entity Framework Core
 - **Micro ORM para Escrituras**: Dapper
 - **Base de Datos**: SQL Server (Dockerizada)
@@ -47,151 +46,68 @@ Este proyecto es una API RESTful para gestionar un sistema de inventario de prod
 
 ## Instrucciones de Configuración
 
-### 1. Clonar el Repositorio
-Clona el repositorio en tu máquina local:
-```bash
-git clone https://github.com/tuusuario/inventory-management-api.git
-cd inventory-management-api
-```
+### 1. Clonar este repositorio
 
-### 2. Configuración de Docker
-Este proyecto utiliza Docker y Docker Compose para ejecutar la API y la base de datos SQL Server. Asegúrate de tener Docker instalado en tu máquina.
+    ```bash
+    git clone https://github.com/tu-usuario/redarborInventorySystem.git
+    cd redarborInventorySystem
+    ```
+    
+### 2. Navegar a la carpeta donde se encuentra el archivo `docker-compose.yml` para la base de datos:
 
-1. Dockerfile para la API: La API se construye y dockeriza usando el siguiente Dockerfile:
-```bash
-# Usar la imagen oficial de .NET para construir la API
-FROM mcr.microsoft.com/dotnet/aspnet:6.0 AS base
-WORKDIR /app
-EXPOSE 80
+    ```bash
+    cd docker/DataBase
+    ```
 
-FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
-WORKDIR /src
-COPY ["InventoryAPI/InventoryAPI.csproj", "InventoryAPI/"]
-RUN dotnet restore "InventoryAPI/InventoryAPI.csproj"
-COPY . .
-WORKDIR "/src/InventoryAPI"
-RUN dotnet build "InventoryAPI.csproj" -c Release -o /app/build
+### 3. Crear los contenedores ejecutando el siguiente comando:
 
-FROM build AS publish
-RUN dotnet publish "InventoryAPI.csproj" -c Release -o /app/publish
+    ```bash
+    docker-compose up --build
+    ```
 
-FROM base AS final
-WORKDIR /app
-COPY --from=publish /app/publish .
-ENTRYPOINT ["dotnet", "InventoryAPI.dll"]
+### 3. Verificar que los contenedores estén corriendo:
 
-```
+    ```bash
+    docker ps
+    ```
 
-2. Docker Compose: El archivo docker-compose.yml se usa para ejecutar tanto la API como la base de datos en contenedores.
-```bash
-version: '3.8'
-
-services:
-  api:
-    build:
-      context: .
-      dockerfile: Dockerfile
-    ports:
-      - "5000:80"
-    environment:
-      - ConnectionStrings__DefaultConnection=Server=db;Database=InventoryDB;User=sa;Password=Your_password123;
-
-  db:
-    image: mcr.microsoft.com/mssql/server:2019-latest
-    environment:
-      - SA_PASSWORD=Your_password123
-      - ACCEPT_EULA=Y
-    ports:
-      - "1433:1433"
-
-```
-
-3. Script de Inicialización de Base de Datos: Se incluye un script de inicialización de la base de datos (init.sql) que crea automáticamente el esquema necesario cuando la base de datos se inicia.
-```bash
-CREATE DATABASE InventoryDB;
-
-USE InventoryDB;
-
-CREATE TABLE Categories (
-  CategoryId INT PRIMARY KEY IDENTITY(1,1),
-  CategoryName NVARCHAR(100) NOT NULL
-);
-
-CREATE TABLE Products (
-  ProductId INT PRIMARY KEY IDENTITY(1,1),
-  Name NVARCHAR(100) NOT NULL,
-  Price DECIMAL(18,2),
-  Stock INT,
-  CategoryId INT
-);
-
-CREATE TABLE InventoryMovements (
-  MovementId INT PRIMARY KEY IDENTITY(1,1),
-  ProductId INT,
-  Quantity INT
-);
-
-```
-
-### 3. Construir y Ejecutar la Aplicación
-
-Para ejecutar la aplicación con Docker, simplemente ejecuta el siguiente comando en el directorio raíz:
-```bash
-docker-compose up --build
-```
-
-### 4. Acceder a la API
+### 5. Acceder a la API
 
 Una vez que los contenedores estén en funcionamiento, puedes acceder a la API en:
 ```bash
-http://localhost:5000/swagger
+http://localhost:32770/swagger
 ```
 
-### 5. Ejecutar las Pruebas Unitarias
+### 6. Ejecutar las Pruebas Unitarias
 
 Para ejecutar las pruebas unitarias localmente:
 ```bash
 dotnet test
 ```
 
-## Estructura del Proyecto
-
-```bash
-InventoryAPI/
-├── Controllers/
-│   └── ProductsController.cs
-├── Data/
-│   ├── ApplicationDbContext.cs
-│   ├── ProductRepository.cs
-├── Models/
-│   └── Product.cs
-├── Services/
-│   └── ProductService.cs
-├── DTOs/
-│   └── ProductDto.cs
-├── Program.cs
-├── Startup.cs
-└── Dockerfile
-```
-
 ## Endpoints de la API
 
 ### Productos:
-- `POST /api/products`: Crear un nuevo producto.
-- `GET /api/products`: Obtener todos los productos.
-- `GET /api/products/{id}`: Obtener un producto por ID.
-- `PUT /api/products/{id}`: Actualizar un producto.
-- `DELETE /api/products/{id}`: Eliminar un producto.
+- `GET /products`: Obtener todos los productos.
+- `GET /products/{id}`: Obtener un producto por ID.
+- `POST /products`: Crear un nuevo producto.
+- `PUT /products/{id}`: Actualizar un producto.
+- `DELETE /products/{id}`: Eliminar un producto.
 
 ### Categorías:
-- `POST /api/categories`: Crear una nueva categoría.
 - `GET /api/categories`: Obtener todas las categorías.
+- `POST /api/categories`: Crear una nueva categoría.
 - `DELETE /api/categories/{id}`: Eliminar una categoría.
 
-### Movimientos de Inventario:
-- `POST /api/inventory`: Registrar entrada/salida de productos.
-
+### Inventario:
+- `POST /inventory`: Registrar un producto en el inventario.
+- `PUT /inventory`: Actualizar el registro de un inventario.
+- `GET /inventory`: Obtener todo el inventario.
+- `GET /inventory/{id}`: Obtener el inventario de un producto.
 ---
+
+### Inventario:
+- `POST /generate-token`: Genera un token para poder acceder a los demas endpoints.
 
 ## Esquema de Base de Datos
 
@@ -206,5 +122,3 @@ Las siguientes tablas se utilizan en el sistema:
 ## Autenticación
 
 Esta API está protegida mediante OAuth2 y tokens JWT. Para acceder a los endpoints protegidos, deberás autenticarte y obtener un token.
-
-
