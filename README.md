@@ -1,6 +1,6 @@
 # API de Gestión de Inventario
 
-Este proyecto es una API RESTful para gestionar un sistema de inventario de productos. Está desarrollado usando **.NET 6**, **Entity Framework** para operaciones de lectura, y **Dapper** para operaciones de escritura. El proyecto sigue el **patrón CQRS** (Command Query Responsibility Segregation) y aplica buenas prácticas como los **principios SOLID**, **Clean Code**, y **Desarrollo Guiado por Pruebas (TDD)**. La aplicación está dockerizada para facilitar su despliegue e incluye tanto la API como la base de datos SQL Server.
+Este proyecto es una API RESTful para gestionar un sistema de inventario de productos. Está desarrollado usando **.NET 8**, **Entity Framework** para operaciones de lectura, y **Dapper** para operaciones de escritura. El proyecto sigue el **patrón CQRS** (Command Query Responsibility Segregation) y aplica buenas prácticas como los **principios SOLID**, **Clean Code**, y **Desarrollo Guiado por Pruebas (TDD)**. La aplicación está dockerizada para facilitar su despliegue e incluye tanto la API como la base de datos SQL Server.
 
 ## Tabla de Contenidos
 1. [Características del Proyecto](#características-del-proyecto)
