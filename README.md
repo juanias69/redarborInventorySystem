@@ -75,7 +75,8 @@ Este proyecto es una API RESTful para gestionar un sistema de inventario de prod
 
 Una vez que los contenedores estén en funcionamiento, puedes acceder a la API en:
 ```bash
-http://localhost:32770/swagger
+[http://localhost:9080/swagger](http://localhost:9080/swagger/index.html)
+[https://localhost:9081/swagger](https://localhost:9081/swagger/index.html)
 ```
 
 ### 6. Ejecutar las Pruebas Unitarias
