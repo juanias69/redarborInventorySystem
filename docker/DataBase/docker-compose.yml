@@ -1,8 +1,6 @@
-version: '3.8'
-
 services:
   api:
-    image: inventorySystem
+    image: inventory_system
     build:
       context: ../.. 
       dockerfile: ./docker/App/Dockerfile
