@@ -120,42 +120,30 @@ Las siguientes tablas se utilizan en el sistema:
 Script Base de Datos
 
 ```bash
-IF NOT EXISTS (SELECT * FROM sys.databases WHERE name = 'InventoryDb')
-BEGIN
-    CREATE DATABASE InventoryDb;
-END
+CREATE DATABASE InventoryDb;
 GO
 
 USE InventoryDb;
-GO
-IF NOT EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'Categories')
-BEGIN
-    CREATE TABLE Categories (
+
+CREATE TABLE Categories (
         Id INT PRIMARY KEY IDENTITY(1,1),
         Name NVARCHAR(100) NOT NULL
     );
-END
 
-IF NOT EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'Products')
-BEGIN
-    CREATE TABLE Products (
+CREATE TABLE Products (
         Id INT PRIMARY KEY IDENTITY(1,1),
         Name NVARCHAR(100) NOT NULL,
         Description NVARCHAR(100) NOT NULL,
         CategoryId INT NOT NULL,
         Price DECIMAL(18,2) NOT NULL
     );
-END
 
-IF NOT EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'Inventory')
-BEGIN
-    CREATE TABLE Inventory (
+CREATE TABLE Inventory (
         Id INT PRIMARY KEY IDENTITY(1,1),
         ProductId INT NOT NULL,
         Quantity INT NOT NULL CHECK (Quantity >= 0), 
         EntryDate SMALLDATETIME NOT NULL DEFAULT GETDATE()
     );
-END
 ```
 
 ---
