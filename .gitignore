@@ -89,5 +89,3 @@ docker-compose.override.yml
 /src/Inventory.Infrastructure/obj/project.nuget.cache
 /src/Inventory.Tests/bin/Debug/net8.0/.msCoverageSourceRootsMapping_Inventory.Tests
 /src/Inventory.Tests/bin/Debug/net8.0/CoverletSourceRootsMapping_Inventory.Tests
-/src/Inventory.Api
-/src/Inventory.Tests
